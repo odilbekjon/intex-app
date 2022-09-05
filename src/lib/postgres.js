@@ -1,9 +1,8 @@
 const { Pool } = require('pg')
-const { connection, knex } = require('../config')
+const { connection } = require('../config')
 
 const pool = new Pool({
     connectionString:connection.connectionELString,
-    // connectionStringTwo:knex
 }) 
 
 const fetch = async (SQL, ...params) => {
