@@ -2,12 +2,7 @@ const { fetch, fetchAll } = require('../../lib/postgres')
 
 
 const PRODUCTS = `
-SELECT product_id AS id, product_name AS name , product_type AS type , 
-product_price_old AS priceOld , product_price_new AS priceNew , 
-product_count AS count, product_frame AS frame , product_size AS size , 
-product_depth AS depth, product_date AS date, product_lang AS lang, product_image AS img , 
-category_id AS categoryId 
-FROM intex_products
+SELECT * FROM intex_products
 `
 
 const PRODUCTS_ID = `
