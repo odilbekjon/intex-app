@@ -1,37 +1,37 @@
-Intex-App Backend
-Backend server for the Intex-App project.
+# 🖥️ Intex-App Backend
 
-Overview
-This repository contains the backend API for the Intex-App website. It provides endpoints for user authentication, data management, and other business logic required by the frontend.
+**Intex-App backend** — bu Intex-App veb-sayti uchun yozilgan server qismi bo‘lib, foydalanuvchi autentifikatsiyasi, ma’lumotlarni boshqarish va biznes logikasini amalga oshiradi. Backend RESTful API tarzida tuzilgan va xavfsiz JWT tokenlar orqali autentifikatsiyani ta’minlaydi.
 
-Features
-User registration and login (JWT authentication)
+---
 
-CRUD operations for main entities
+## 📋 Backend haqida
 
-Data validation and error handling
+Backend quyidagi funksiyalarni bajaradi:
 
-Secure password storage (bcrypt)
+- Foydalanuvchilarni ro‘yxatdan o‘tkazish va tizimga kirish
+- Ma’lumotlarni yaratish, o‘qish, yangilash va o‘chirish (CRUD)
+- Ma’lumotlarni validatsiya qilish va xatoliklarni boshqarish
+- Parollarni xavfsiz saqlash (bcrypt yordamida)
+- JWT orqali autentifikatsiya va avtorizatsiya
 
-RESTful API design
+---
 
-Technologies Used
-Node.js
+## 🛠 Texnologiyalar
 
-Express.js
+- **Node.js** — server platformasi
+- **Express.js** — web framework
+- **MongoDB** / **PostgreSQL** / **MySQL** (o‘zingiz ishlatganini yozing)
+- **Mongoose** / **Sequelize** / **Prisma** (agar ishlatilgan bo‘lsa)
+- **JWT** — JSON Web Token autentifikatsiyasi
+- **bcrypt** — parollarni xesh qilish
+- **dotenv** — muhit o‘zgaruvchilarini boshqarish
 
-MongoDB / PostgreSQL / MySQL (o‘zingiz ishlatgan DB ni yozing)
+---
 
-Mongoose / Sequelize / Prisma (agar ishlatilgan bo‘lsa)
+## ⚙️ Ishga tushirish (local)
 
-JSON Web Tokens (JWT) for authentication
+### 1. Repozitoriyani klonlash:
 
-dotenv for environment variables management
-
-Getting Started
-Prerequisites
-Node.js (version 14 or higher)
-
-Database server running (MongoDB/PostgreSQL/MySQL)
-
-npm or yarn package manager
+```bash
+git clone https://github.com/username/intex-app-backend.git
+cd intex-app-backend
